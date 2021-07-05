@@ -1,0 +1,233 @@
+/*** GOOGLE FONT ***/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/*** BODY ***/
+body {
+    font-family: quicksand, calibri;
+    background-color: #F1F1F6;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+ }
+
+/*** HEADER ***/
+header {
+    font-family: prompt, calibri;
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+#title {
+    font-family: rubik, calibri;
+    background-color: #E1CCEC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+
+nav {
+    background-color: #C9B6E4;
+    padding: 0px;
+    margin: 0px;
+    position: sticky;
+    top: 0;
+}
+
+.navigation > ul {
+    margin: 0px;
+    margin-left: 20px;
+    padding: 0px;
+    display: block;
+    float: inline-start;
+}
+
+.navigation > ul > li {
+    padding-right: 10px;
+    margin: 0px;
+    list-style: none;
+    display: inline-block;
+}
+
+.navigation > ul > li > a {
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.navigation > ul > li > a:hover {
+    display: block;
+    font-weight: bold;
+}
+
+.navigation > ul > li .dropdown {
+    padding: 0px;
+    margin: 0px;
+    background-color: #c1a6e7;
+    display: none;
+}
+
+.navigation > ul > li:hover .dropdown {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    position: absolute;
+}
+
+.dropdown li {
+    padding: 0px;
+    margin: 0px;
+    display: block;
+}
+
+.dropdown li a{
+    padding: 5px;
+    margin: 0px;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    display: block;
+    font-weight: bold;
+    background-color: #b997e9;
+}
+
+/*** MAIN ***/
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 75%;
+}
+
+.content-picture {
+    width: 50%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-color: #E1CCEC;
+    padding: 1px 20px 10px 20px;
+    margin: 10px auto 25px auto;
+}
+
+.content-picture-member {
+    width: 200px;
+}
+
+.content-picture-album {
+    width: 35%;
+}
+
+#content-table {
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+}
+
+/*** ASIDE ***/
+#aside-content {
+    padding: 1px 5px 10px 20px;
+    margin: 10px auto 25px auto;
+}
+
+#profil {
+    width: 100%;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.aside-biodata {
+    display: flex ;
+}
+
+aside th {
+    text-align: left;
+    padding-right: 5px;
+}
+
+
+/*** FOOTER ***/
+footer {
+    background-color: #BE9FE1;
+    text-align: center;
+    padding: 2px;
+    margin: 0px;
+    overflow: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-picture {
+        width: 95%;
+    }    
+
+    #profil {
+        width: 200px;
+    }
+
+    .content-picture-album {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-picture {
+        width: 95%;
+    }    
+
+    #profil {
+        width: 200px;
+    }
+
+    .content-picture-album {
+        width: 250px;
+    }
+    
+}
+
+@media screen and (max-width: 280px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content-picture {
+        width: 95%;
+    }    
+
+    #profil {
+        width: 100%;
+    }
+
+    .content-picture-album {
+        width: 100%;
+    }
+    
+}
